@@ -374,3 +374,104 @@ body {
         }
     }
 }
+
+@media (max-width: 980px) {
+    body {
+        main {
+            #home {
+                div.bio-desc {
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        main {
+            #home {
+                div.bio-desc {
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        main {
+            // Home
+            // ==================================================================
+            #home {
+                flex-direction: column;
+
+                div {
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    &.bio-desc {
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .social-media {
+                    flex-direction: row;
+                    gap: 3rem;
+
+                    a i {
+                        font-size: 3rem;
+                    }
+                }
+            }
+
+            // Projects
+            // ==================================================================
+            #projects {
+                .card {
+                    &:hover {
+                        div.cover {
+                            top: 45px;
+                        }
+                    }
+
+                    div {
+                        &.card-img {
+                            height: 100px;
+
+                            img {
+                                object-fit: cover;
+                            }
+                        }
+
+                        &.cover {
+                            top: 45px;
+                        }
+
+                        &.card-text {
+                            padding: 2rem;
+
+                            transform: translateY(40px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

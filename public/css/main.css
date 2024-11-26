@@ -251,4 +251,55 @@ body.dark #projects .card div.cover {
   background: linear-gradient(163deg, rgb(204, 146, 0) 0%, rgb(152, 117, 0) 100%);
 }
 
+@media (max-width: 980px) {
+  body main #home div.bio-desc p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 700px) {
+  body main #home div.bio-desc p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  body h1 {
+    font-size: 3rem;
+  }
+  body h2 {
+    font-size: 1.5rem;
+  }
+  body main #home {
+    flex-direction: column;
+  }
+  body main #home div p {
+    font-size: 1rem;
+  }
+  body main #home div.bio-desc p {
+    font-size: 1rem;
+  }
+  body main #home .social-media {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  body main #home .social-media a i {
+    font-size: 3rem;
+  }
+  body main #projects .card:hover div.cover {
+    top: 45px;
+  }
+  body main #projects .card div.card-img {
+    height: 100px;
+  }
+  body main #projects .card div.card-img img {
+    object-fit: cover;
+  }
+  body main #projects .card div.cover {
+    top: 45px;
+  }
+  body main #projects .card div.card-text {
+    padding: 2rem;
+    transform: translateY(40px);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
